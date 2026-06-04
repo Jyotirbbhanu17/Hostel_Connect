@@ -1,52 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>HostelConnect Login</title>
-
-<link rel="stylesheet" href="css/styles.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-</head>
-
-<body class="login-page">
-
-<div class="login-card">
-
-    <div class="logo-container">
-        <img src="assets/images/logo.png" alt="HostelConnect Logo">
-    </div>
-
-    <h1>Welcome Back</h1>
-    <p class="subtitle">Login to access HostelConnect</p>
-
-    <form id="loginForm">
-
-        <label>Username</label>
-        <input type="text" placeholder="Enter your username" required>
-
-        <label>Password</label>
-
-        <div class="password-field">
-            <input type="password" id="password" placeholder="Enter your password" required>
-            <span class="toggle-password" onclick="togglePassword()">👁</span>
-        </div>
-
-        <button type="submit">Sign In</button>
-
-    </form>
-
-    <p class="recovery">
-        <a href="recover.html">Forgot Username / Password?</a>
-    </p>
-
-</div>
-
-<script src="js/script.js"></script>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hostelconnect</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
