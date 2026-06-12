@@ -12,6 +12,7 @@ function MyComplaints() {
       category: "Electrical",
       status: "In Progress",
       severity: "High",
+      Upvotes:"40",
       date: "03/06/2026",
     },
     {
@@ -20,6 +21,7 @@ function MyComplaints() {
       category: "Internet",
       status: "Submitted",
       severity: "Medium",
+      Upvotes:"25",
       date: "02/06/2026",
     },
     {
@@ -28,6 +30,7 @@ function MyComplaints() {
       category: "Mess",
       status: "Resolved",
       severity: "Low",
+      Upvotes:"15",
       date: "30/05/2026",
     },
   ];
@@ -74,6 +77,7 @@ function MyComplaints() {
               <th>Category</th>
               <th>Status</th>
               <th>Severity</th>
+              <th>Upvotes</th>
               <th>Date</th>
             </tr>
           </thead>
@@ -99,7 +103,14 @@ function MyComplaints() {
                 </td>
 
                 <td>{complaint.severity}</td>
-                <td>{complaint.date}</td>
+
+<td>
+  <button className="upvote-btn">
+    ⬆ {complaint.Upvotes}
+  </button>
+</td>
+
+<td>{complaint.date}</td>
               </tr>
             ))}
           </tbody>
