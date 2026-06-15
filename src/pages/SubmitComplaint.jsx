@@ -61,7 +61,7 @@ function SubmitComplaint() {
             <option value="Other">Other</option>
           </select>
 
-          <label>Severity</label>
+          {/* <label>Severity</label>
           <select
             name="severity"
             value={form.severity}
@@ -71,7 +71,7 @@ function SubmitComplaint() {
             <option value="Low">Low</option>
             <option value="Medium">Medium</option>
             <option value="High">High</option>
-          </select>
+          </select> */}
 
           <label>Description</label>
           <textarea

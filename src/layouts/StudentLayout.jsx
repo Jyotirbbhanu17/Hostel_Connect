@@ -1,4 +1,5 @@
 import { Outlet, useLocation } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 import Sidebar from "../components/common/Sidebar";
 
 const PAGE_TITLES = {
@@ -12,6 +13,7 @@ const PAGE_TITLES = {
 
 function StudentLayout() {
   const location = useLocation();
+  const navigate = useNavigate();
 
   return (
     <div className="hc-app">
@@ -24,8 +26,16 @@ function StudentLayout() {
           </h1>
 
           <div className="hc-top-actions">
-            <button className="icon-btn">🔔</button>
-            <button className="admin-btn">Jyotirbhanu</button>
+            <button
+            className="icon-btn"
+            onClick={()=>navigate("/notifications")}>
+              🔔
+            </button>
+            <button
+            className="admin-btn"
+            onClick={()=>navigate("/profile")}>
+              Jyotirbhanu
+              </button>
           </div>
         </header>
 
