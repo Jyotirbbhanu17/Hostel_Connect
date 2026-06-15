@@ -1,0 +1,98 @@
+.warden-profile-page {
+  width: 100%;
+}
+
+.warden-profile-card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+.warden-profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.warden-profile-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.warden-profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.warden-profile-header h2 {
+  margin: 0;
+}
+
+.warden-profile-header p {
+  color: #6b7280;
+}
+
+.warden-profile-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.warden-profile-item {
+  background: #f9fafb;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.warden-profile-item span {
+  display: block;
+  color: #6b7280;
+  margin-bottom: 6px;
+}
+
+.warden-profile-upload {
+  margin-top: 30px;
+}
+
+.edit-btn {
+  margin-top: 24px;
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #523aed
+  );
+}
+
+.edit-btn:hover {
+  opacity: 0.9;
+}
+.upload-btn {
+  display: inline-block;
+
+  padding: 12px 18px;
+
+  background: #eef2ff;
+  color: #4f46e5;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+  font-weight: 600;
+}
